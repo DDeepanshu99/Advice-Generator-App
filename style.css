@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(218, 23%, 16%);
+    color: hsl(0, 0%, 100%);
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+    line-height: 1.5rem;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.card {
+    background-color: hsl(217, 19%, 24%);
+    width: 550px;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    border-radius: 15px;
+}
+.advice-id {
+    color: hsl(150, 100%, 66%);
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+.advice-body {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: hsl(193, 38%, 86%);
+    line-height: 2rem;
+}
+.pattern-divider {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.dice {
+    position: absolute;
+    bottom: -3vh;
+    left: 45%;
+    background-color: hsl(150, 100%, 66%);
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-out;
+}
+.dice img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+.dice:active {
+    box-shadow: 
+        0 0 10px 2px hsla(150, 100%, 66%, 0.6),
+        0 0 30px 6px hsla(150, 100%, 66%, 0.45),
+        0 0 30px 10px hsla(150, 100%, 66%, 0.3);
+}
+@media (max-width: 450px) {
+    *{
+        margin: 10px;
+    }
+    .dice {
+        bottom: -4vh;
+        left: 42%;
+    }
+    
+}
